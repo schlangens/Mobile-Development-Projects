@@ -47,6 +47,14 @@ var stepOne = function(samWater, samPainRate){
 
 //Number Function --> Pass number, Local Variable within number functions, while loop (if false return number, if true, Math to output and return number
 
+var stepTwo = function(samPainRate){
+	while (samPainRate <= 15){
+	console.log( "My wife's pain rate is climbing at " + samPainRate + ", and she needs some pain medicine");
+	samPainRate++;
+	};
+	return samPainRate;
+};
+
 
 
 
@@ -71,4 +79,5 @@ var stepOne = function(samWater, samPainRate){
 
 waterBreaks();
 stepOne(samWater, samPainRate);
+stepTwo(samPainRate);
     
