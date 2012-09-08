@@ -76,7 +76,16 @@ return hosp;
 
 
 //Array Function  --> Number and Array passed through, Local Variables, For loop if true Math and the output, if false return array
-
+var babyNames = function(){
+	girlNames = ("Amelia Jane", "Emma Jane", "Catherine Jane");
+	boyNames = ("Craig Matthew", "Jason Scott", "Charlie Matthew");
+	var decisionTime = function(babyNames){
+		girlNames=true;
+		for (var i=0, j=girlNames.length; i<j; i++){
+			console.log("Our baby is a girl, and her name is" + girlNames[0]);
+		}	
+	}
+};
 
 
 
@@ -88,3 +97,4 @@ waterBreaks();
 stepOne(samWater, samPainRate);
 stepTwo(samPainRate);
 stepThree(orderOfAction);    
+babyNames();
