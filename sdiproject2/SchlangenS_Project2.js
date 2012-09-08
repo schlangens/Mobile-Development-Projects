@@ -61,6 +61,13 @@ var stepTwo = function(samPainRate){
 
 //String Function --> Pass two strings, local variables, String Concatenation, Return String
 
+var stepThree = function (orderOfAction[2], orderOfAction[3] ){
+	hosp = "Community South";
+	floor = "3rd Floor";
+	console.log( "We" + orderOfAction[2] + "of" + hosp + "assigned to the" + floor + ". We are super excited to get medicine for pain, and witness the birth of our first baby!!");
+return hosp;
+};
+
 
 
 
@@ -80,4 +87,4 @@ var stepTwo = function(samPainRate){
 waterBreaks();
 stepOne(samWater, samPainRate);
 stepTwo(samPainRate);
-    
+stepThree(orderofAction[2], orderOfAction[3]);    
