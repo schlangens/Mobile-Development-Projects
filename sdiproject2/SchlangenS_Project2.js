@@ -10,22 +10,19 @@
 var	samWater = "My wifes water just broke",
 	samPainRate = 10,
 	orderOfAction = ["get in the car", "drive the speed of light", "arrive at the hospital", "baby is born"],
-	babyFinalName = "Amelia Jane Schlangen";
 	
 
 
 //Procedure --> Argument, Argument Conditional (Output for both true, and false) return back
 
-var waterBreaks = function(waterBreaks){
-	waterBreaks = samWater;
-	if (waterBreaks == "My wifes water just broke") {
-		console.log ( waterBreaks + ", and we need to go to the hospital!!!");
-	 } else {
-		console.log ("We keep sleeping peacefully");
-	}
-	
+var waterBreaks = function(water){
+	var water = samWater;    
+	if (water == "My wifes water just broke"){  
+console.log( water + ", and we are on our way to the hospital");    
+} else {    
+console.log ("We are sleeping in our bed getting our beauty rest");   
+}   
 };
-
 
 
 
@@ -89,6 +86,7 @@ var babyNames = function(){
 			for (var i=0, j=girlNames.length; i<j; i++){
 			console.log("Since our baby is a girl, we thought about the name " +girlNames[i]);
 			};
+return girlNames[0];
 };
 
 
@@ -96,9 +94,9 @@ var babyNames = function(){
 
 //Main Code - Function Calls
 
-waterBreaks();
+waterBreaks(samWater);
 stepOne(samWater, samPainRate);
 stepTwo(samPainRate);
 stepThree(orderOfAction);    
 babyNames();
-console.log("Our baby's name is " + babyFinalName);
+console.log("Our baby's name is " + girlNames[0]);
