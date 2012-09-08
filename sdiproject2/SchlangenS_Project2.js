@@ -30,6 +30,17 @@ var waterBreaks = function(waterBreaks){
 
 //Boolean Function --> Two Arguments, Compairions, OUTPUT (true and False, Return Boolean
 
+var stepOne = function(samWater, samPainRate){
+	if (samWater == "My wifes water just broke" && samPainRate >= 10){
+		headingToHospital = true;
+		console.log ("We are going to " + orderOfAction[0] + ", and " + orderOfAction[1]);
+	} else{
+		headingToHospital = false;
+		console.log ("We are going to just keep sleeping in bed, and have our beauty sleep");
+	}
+	return headingToHospital
+};
+
 
 
 
@@ -59,4 +70,5 @@ var waterBreaks = function(waterBreaks){
 //Main Code - Function Calls
 
 waterBreaks();
+stepOne(samWater, samPainRate);
     
