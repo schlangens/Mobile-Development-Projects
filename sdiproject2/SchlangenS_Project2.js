@@ -9,7 +9,8 @@
 
 var	samWater = "My wifes water just broke",
 	samPainRate = 10,
-	orderOfAction = ["get in the car", "drive the speed of light", "arrive at the hospital", "baby is born"];
+	orderOfAction = ["get in the car", "drive the speed of light", "arrive at the hospital", "baby is born"],
+	babyFinalName = "Amelia Jane Schlangen";
 	
 
 
@@ -77,16 +78,18 @@ return hosp;
 
 //Array Function  --> Number and Array passed through, Local Variables, For loop if true Math and the output, if false return array
 var babyNames = function(){
-	girlNames = ("Amelia Jane", "Emma Jane", "Catherine Jane");
-	boyNames = ("Craig Matthew", "Jason Scott", "Charlie Matthew");
-	var decisionTime = function(babyNames){
-		girlNames=true;
-		for (var i=0, j=girlNames.length; i<j; i++){
-			console.log("Our baby is a girl, and her name is" + girlNames[0]);
-		}	
-	}
+	girlNames = ["Amelia Jane", "Emma Jane", "Catherine Jane"];
+	boyNames  = ["Craig Matthew", "Travis Scott", "Arthur Charles"];
+	
+	
+			for (var i=0, j=boyNames.length; i<j; i++){
+			console.log("If our baby was a boy, we thought about the names " +boyNames[i]);
+			};
+				
+			for (var i=0, j=girlNames.length; i<j; i++){
+			console.log("Since our baby is a girl, we thought about the name " +girlNames[i]);
+			};
 };
-
 
 
 
@@ -98,3 +101,4 @@ stepOne(samWater, samPainRate);
 stepTwo(samPainRate);
 stepThree(orderOfAction);    
 babyNames();
+console.log("Our baby's name is " + babyFinalName);
