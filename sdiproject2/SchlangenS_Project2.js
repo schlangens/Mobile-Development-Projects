@@ -9,14 +9,13 @@
 
 var	samWater = "My wifes water just broke",
 	samPainRate = 10,
-	orderOfAction = ["get in the car", "drive the speed of light", "arrive at the hospital", "baby is born"],
+	orderOfAction = ["get in the car", "drive the speed of light", "arrive at the hospital", "baby is born"];
 	
 
 
 //Procedure --> Argument, Argument Conditional (Output for both true, and false) return back
 
-var waterBreaks = function(water){
-	var water = samWater;    
+var waterBreaks = function(water){   
 	if (water == "My wifes water just broke"){  
 console.log( water + ", and we are on our way to the hospital");    
 } else {    
