@@ -1,17 +1,16 @@
 //Scott A Schlangen
 //SDI 1209
 //Project 2
-//Functions and Loops
+
 
 
 
 //Variables --> String,Number,Array
 
-
-
-
-
-
+var	samWater = "My Water just Broke!!!",
+	samPainRate = 10,
+	orderOfAction = ["get in the car", "drive the speed of light", "arrive at the hospital", "baby is born"];
+	
 
 
 //Procedure --> Argument, Argument Conditional (Output for both true, and false) return back
