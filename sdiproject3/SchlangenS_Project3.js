@@ -10,8 +10,8 @@ var teacher = "Mr Hurt",
     place = "Bloomington North High School, Indiana Algebra Class",
     peopleNames = [ "Myself", "Katy", "Hillary" ],
     tvChannels = {
-        channel11: "",
-        channel3: "",
-        channel4: "",
-        channel8: ""
+        channel11: "Fox 59",
+        channel3: "WTHR",
+        channel4: "CNN",
+        channel8: "Wish TV"
 };
