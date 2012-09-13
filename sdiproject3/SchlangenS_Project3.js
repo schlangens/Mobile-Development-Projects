@@ -15,3 +15,34 @@ var teacher = "Mr Hurt",
         channel4: "CNN",
         channel8: "Wish TV"
 };
+
+
+
+var begin = {
+
+	 goingToAlgebra : function (mathTeacher) {
+                        if ( mathTeacher == "Mr Hurt") {
+                            console.log("I was heading to " + teacher + "'s " + "Algebra Class to start period 2.")
+                        } else {
+                            console.log("I was still in 1st period class");
+                            goingToAlgebra("Mr Hurt");
+                        }
+                
+       }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+//Calls Telling the Story
+
+
+begin.goingToAlgebra(teacher);
