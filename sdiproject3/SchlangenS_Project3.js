@@ -13,7 +13,7 @@ var	samWater = "My wifes water just broke",
 
 //JSON Information
 var daysJSON = {
-    "day": [
+    "days": [
         {
             "day": "Monday",
             "baby": "Amelia",
@@ -130,10 +130,10 @@ return girlNames[0];
  //Accessor Method: Sequence of events from the json
 var bringBabyHome = {
    	 dayHandler: function (json) {
-            for (var i = 0; i < json.day; i++) {
-            whatHappend = json.day[i];
+            for (var i = 0; i < json.days.length; i++) {
+            whatHappend = json.days[i];
 	        console.log("This is exactly how our first week played out");
-	        console.log("On" + day.day + day.baby + day.action + day.temp);
+	        console.log("On" + days.day + days.baby + days.action + days.temp);
 	        };
 	        }
 };
