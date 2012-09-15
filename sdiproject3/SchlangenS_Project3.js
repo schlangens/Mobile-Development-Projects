@@ -43,7 +43,7 @@ var daysJSON = {
             "baby": "Amelia",
             "action": "ate three ounces",
             "temp": "and her temperatue was appropriate"
-        }    
+        },    
     ]
 };
 	
@@ -71,7 +71,7 @@ var stepOne = function(samWater, samPainRate){
 		headingToHospital = false;
 		console.log ("We are going to just keep sleeping in bed, and have our beauty sleep");
 	}
-	return headingToHospital
+	return headingToHospital;
 };
 
 
@@ -136,7 +136,7 @@ var bringBabyHome = {
 	        console.log("On" + day.day + day.baby + day.action + day.temp);
 	        };
 }
-}
+};
 
  
 
