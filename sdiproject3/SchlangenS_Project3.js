@@ -15,34 +15,34 @@ var	samWater = "My wifes water just broke",
 var daysJSON = {
     "days": [
         {
-            "day": "Monday",
-            "baby": "Amelia",
-            "action": "ate three ounces",
-            "temp": "and her temperatue was appropriate"
+            "day": " Monday",
+            "baby": " Amelia",
+            "action": " ate three ounces of milk ",
+            "temp": " and her temperatue was appropriate"
         },
         {
-           	"day": "Tuesday",
-            "baby": "Amelia",
-            "action": "ate three ounces",
-            "temp": "and her temperatue was appropriate"
+           	"day": " Tuesday",
+            "baby": " Amelia",
+            "action": " ate three ounces of milk",
+            "temp": " and her temperatue was appropriate"
         },
         {
-            "day": "Wednesday",
-            "baby": "Amelia",
-            "action": "ate three ounces",
-            "temp": "and her temperatue was appropriate"
+            "day": " Wednesday",
+            "baby": " Amelia",
+            "action": " ate three ounces of milk",
+            "temp": " and her temperatue was appropriate"
         },
         {
-	        "day": "Thursday",
-            "baby": "Amelia",
-            "action": "ate three ounces",
-            "temp": "and her temperatue was appropriate"
+	        "day": " Thursday",
+            "baby": " Amelia",
+            "action": " ate three ounces of milk",
+            "temp": " and her temperatue was appropriate"
         },
         {
-         	"day": "Friday",
-            "baby": "Amelia",
-            "action": "ate three ounces",
-            "temp": "and her temperatue was appropriate"
+         	"day": " Friday",
+            "baby": " Amelia",
+            "action": " ate three ounces of milk",
+            "temp": " and her temperatue was appropriate"
         },    
     ]
 };
@@ -127,13 +127,12 @@ return girlNames[0];
 
 
 
- //Accessor Method: Sequence of events from the json
+//Accessor Method: Sequence of events from the json
 var bringBabyHome = {
    	 dayHandler: function (json) {
             for (var i = 0; i < json.days.length; i++) {
             whatHappend = json.days[i];
-	        console.log("This is exactly how our first week played out");
-	        console.log("On" + days.day + days.baby + days.action + days.temp);
+	        console.log("On" +  whatHappend.day + whatHappend.baby + whatHappend.action + whatHappend.temp);
 	        };
 	        }
 };
@@ -148,4 +147,5 @@ stepTwo(samPainRate);
 stepThree(orderOfAction);    
 babyNames();
 console.log("Our baby's name is " + girlNames[0]);
+console.log("This is exactly how our first week played out");
 bringBabyHome.dayHandler(daysJSON);
