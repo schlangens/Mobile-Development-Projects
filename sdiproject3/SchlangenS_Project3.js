@@ -1,6 +1,6 @@
 //Scott A Schlangen
 //SDI 1209
-//Project 2
+//Project 3
 
 //Variables --> String,Number,Array
 
