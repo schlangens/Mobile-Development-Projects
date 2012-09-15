@@ -2,11 +2,6 @@
 //SDI 1209
 //Project 2
 
-
-
-
-
-
 //Variables --> String,Number,Array
 
 var	samWater = "My wifes water just broke",
@@ -134,12 +129,13 @@ return girlNames[0];
 
  //Accessor Method: Sequence of events from the json
 var bringBabyHome = {
-   	 dayHandler: function(json){
+   	 dayHandler: function (json) {
             for (var i = 0; i < json.day; i++) {
             whatHappend = json.day[i];
 	        console.log("This is exactly how our first week played out");
 	        console.log("On" + day.day + day.baby + day.action + day.temp);
-            return whatHappend;
+	        };
+}
 }
 
  
