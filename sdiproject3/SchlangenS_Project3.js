@@ -135,7 +135,7 @@ var bringBabyHome = {
 	        console.log("This is exactly how our first week played out");
 	        console.log("On" + day.day + day.baby + day.action + day.temp);
 	        };
-}
+	        }
 };
 
  
