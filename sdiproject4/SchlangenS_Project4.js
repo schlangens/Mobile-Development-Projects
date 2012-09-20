@@ -44,6 +44,19 @@ var convertToDigit = function (string) {
         return converted;
     };
     
+//String Section
+
+
+//Title-case a String, my example will uppercase each first letter in the string
+var funTitle = function (string) {
+    upperX = function (string) {
+	    return string.charAt(0).toUpperCase() + string.substr(1);
+	    };
+  stringX = string.replace(/\w\S*/g, upperX);
+  return stringX;
+};
+    
+    
     
     
     
@@ -62,3 +75,6 @@ console.log(deciNumber);
 
 convertToDigit("99");
 console.log(converted);
+
+funTitle("scott schlangen loves full sail univerity");
+console.log(stringX);
