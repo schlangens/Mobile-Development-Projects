@@ -55,7 +55,15 @@ var funTitle = function (string) {
   stringX = string.replace(/\w\S*/g, upperX);
   return stringX;
 };
-    
+
+
+
+//Does a string follow an aaa@bbb.ccc pattern like an email address? lets check email pattern
+var emailChecker = function (email) {
+     regEx = /^[\w._%+-]+@{1}[\w-]+\.[a-z]{2,6}$/;
+     addressObserverd = regEx.test(email);
+     return addressObserverd;
+};
     
     
     
@@ -78,3 +86,7 @@ console.log(converted);
 
 funTitle("scott schlangen loves full sail univerity");
 console.log(stringX);
+
+
+emailChecker("sschlangen@gmail.com");
+console.log("email = " + addressObserverd);
