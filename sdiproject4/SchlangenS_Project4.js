@@ -30,6 +30,19 @@
         return deciNumber;
     };    
     
+
+
+
+//Given a string version of a number such as "42", return the value as an actual Number, such as 42, but we will use 99
+
+var convertToDigit = function (string) { 
+        if (!isNaN(string)) { 
+            converted = Number(string);
+        } else {
+            console.log(string + " this was awkward we cant convert that prbly not a string.");
+        };
+        return converted;
+    };
     
     
     
@@ -45,3 +58,7 @@ console.log("Days: " + dayDif + ";  hours: " + hourDif + ";");
 
 fourDec(8.5);
 console.log(deciNumber);
+
+
+convertToDigit("99");
+console.log(converted);
