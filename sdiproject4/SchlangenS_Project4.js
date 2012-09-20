@@ -2,6 +2,8 @@
 //SDI 1209
 //Project 4
 
+//My awesome Lib
+
 
     
 
@@ -9,7 +11,7 @@
 
 /*Find the number of hours or days difference between two dates.*/
 
-   var checkIt = function (firstDate, secondDate) { 
+var checkIt = function (firstDate, secondDate) { 
         oneDay = 1000*60*60*24;
         oneHour = 1000*60*60;
         if (firstDate < secondDate) {
@@ -20,15 +22,15 @@
             hourDif = Math.ceil((firstDate.getTime()-secondDate.getTime())/(oneHour));
         }
         return [dayDif, hourDif];
-    }; //close checkIt Function
+}; //close checkIt Function
     
 
 //Format a number to use a specific number of decimal places, we will do it by four
 
- var fourDec = function (num) { 
+var fourDec = function (num) { 
         deciNumber = num.toFixed(4);
         return deciNumber;
-    };    
+};    
     
 
 
@@ -42,7 +44,7 @@ var convertToDigit = function (string) {
             console.log(string + " this was awkward we cant convert that prbly not a string.");
         };
         return converted;
-    };
+};
     
 //String Section
 
@@ -65,8 +67,13 @@ var emailChecker = function (email) {
      return addressObserverd;
 };
     
-    
-    
+//Check phonenumber same idea as email except diff var and expression algorithm
+
+var phoneChecker = function (phoneNumber) {
+   regEx = /^[0-9]{3}[\-]{1}[0-9]{3}[\-]{1}[0-9]{4}$/;
+   phoneObserved = regEx.test(phoneNumber);
+   return phoneObserved;
+};    
     
  
     
@@ -80,13 +87,14 @@ console.log("Days: " + dayDif + ";  hours: " + hourDif + ";");
 fourDec(8.5);
 console.log(deciNumber);
 
-
 convertToDigit("99");
 console.log(converted);
 
 funTitle("scott schlangen loves full sail univerity");
 console.log(stringX);
 
-
 emailChecker("sschlangen@gmail.com");
 console.log("email = " + addressObserverd);
+
+phoneChecker("317-327-3811");
+console.log("phone = " + phoneObserved);
