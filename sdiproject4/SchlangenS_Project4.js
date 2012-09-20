@@ -22,7 +22,13 @@
         return [dayDif, hourDif];
     }; //close checkIt Function
     
-    
+
+//Format a number to use a specific number of decimal places, we will do it by four
+
+ var fourDec = function (num) { 
+        deciNumber = num.toFixed(4);
+        return deciNumber;
+    };    
     
     
     
@@ -36,3 +42,6 @@
 
 checkIt(new Date(2011, 10, 1), new Date()); //Last year birthday YYYY, MM, DD 
 console.log("Days: " + dayDif + ";  hours: " + hourDif + ";");    
+
+fourDec(8.5);
+console.log(deciNumber);
