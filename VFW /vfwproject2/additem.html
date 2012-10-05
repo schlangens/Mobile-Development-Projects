@@ -32,35 +32,29 @@
 <article> <!--Start Entry form-->
 <form action="#" method="post">
                 <fieldset>
-                    <div id="legendCenter"<legend><b>Add Fix</b></legend></div>
+                    <div id="legendCenter"><legend><b>Add Fix</b></legend></div>
                     <ul>
                         <li><label for="nameOfFix">Name of the Fix:</label><input type="text" id="nameOfFix" /></li>
                         
                             
 
-			<li id="select"><label for="os">What Operating System?</label><br /></li>
-			<li><label for="timeStamp">When did you encounter this problem:</label><input type="timeStamp" id="timeStamp" placeholder="mm/dd/yyyy" /></li>
+			<li id="select"><label for="select">What Operating System?</label><br /></li>
+			<li><label for="timeStamp">When did you encounter this problem:</label><input type="text" id="timeStamp" placeholder="mm/dd/yyyy" /></li>
 			<li><label for="didItWork">Did it Work? </label>
-			<ul class="checkbox"
+			<ul class="checkbox">
 				<li><input type="radio" id="Yes" value="Yes" name="didItWork" /> <label for="Yes">Yes</label></li>
 				<li><input type="radio" id="No" value="no" name="didItWork" /> <label for="No">No</label></li>
 
 			</ul>
-
-
-
-
-
-
-                        <li><label for="diag">Diagnosis:</label><br /><textarea id="diag" placeholder="Please type your problem here."></textarea></li>
-                        <li><label for="fix">Fix used:</label><br /><textarea id="fix" placeholder="Type details of your fix."></textarea></li>
-                        <li><label for="location">Location of file link used for fix:</label><br /><textarea id="location" placeholder="Give a good location of the fix."></textarea></li>
-                        <li><label for="comments">Comments from tech.:</label><br /><textarea id="comments" placeholder="Enter detailed comments."></textarea></li>
-                    </ul>
-                </fieldset>
+                <li><label for="diag">Diagnosis:</label><br /><textarea id="diag" placeholder="Please type your problem here."></textarea></li>
+                <li><label for="fix">Fix used:</label><br /><textarea id="fix" placeholder="Type details of your fix."></textarea></li>
+                <li><label for="location">Location of file link used for fix:</label><br /><textarea id="location" placeholder="Give a good location of the fix."></textarea></li>
+                <li><label for="comments">Comments from tech.:</label><br /><textarea id="comments" placeholder="Enter detailed comments."></textarea></li>
+</ul>
+</fieldset>
 </div>
 
-<input type="submit" value="Add This Fix" />
+<input id="submit" type="submit" value="Add this Fix" 
 
                  
 </form>

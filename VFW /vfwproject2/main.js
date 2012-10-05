@@ -36,7 +36,7 @@ function gettype(){
 		var formTag = document.getElementsByTagName("form"),  //formTag is an array of all the form tags.
 		selectLi = $('select'),
 		makeSelect = document.createElement('select');
-		makeSelect.setAttribute("id", "groups");
+		makeSelect.setAttribute("id", "groupstwo");
 		for(var i=0, j=fileSystem.length; i<j; i++){
 			var makeOption = document.createElement('option');
 			var optText = fileSystem[i];
@@ -48,28 +48,44 @@ function gettype(){
 
 }
 
+//find value of selected radio buttion
+	function getSelectedRadio(){
+		var radio = document.forms[0].didItWork;//created array
+		for(var i=0; i<radios.length; i++){
+			if(radios[i].checked){
+			didItWorkValue = radios[i].value;
+			}
+		}
+	}
+	
+	
 	function storeData(){
-		var id 			= Math.floor(Math.random()*100000000001);
+		var id = Math.floor(Math.random()*100000001);
 		//gather up all our form field values and store in an object.
 		//Object properties contain array with the form label and input value.
-		var item		= {};
-			item.os	= ["Operating System Information", $('groups').value];
-			item.timeStamp	= ["Timestamp information", $('timeStamp').value];
-			item.didItWork	= ["Does the fix work", $('didItWork').value];
-			item.checkbox	= ["What the user checked in the box", $('checkbox').value];
-			item.diag	= ["Technician diagnosed with", $('diag').value];
-			item.location	= ["Location of fix", $('location').value];
-			item.comments	= ["Commented information", $('comments').value];
+		var item			= {};
+			item.group		= ["Operating System Information:", $('groups').value];
+			item.grouptwo	= ["Type:", $('groupstwo').value];
+			item.timeStamp	= ["Timestamp information:", $('timeStamp').value];
+			item.Yes		= ["Was it yes:"];
+			item.No			= ["Was it no:"];
+			item.diag		= ["Technician diagnosed with:", $('diag').value];
+			item.location	= ["Location of fix:", $('location').value];
+			item.comments	= ["Commented information:", $('comments').value];
+//Store Local
+	localStorage.setItem(id, JSON.stringify(item));
+	console.log(localStorage);
 	}
 
 
 
 	
 	//Variable Defaults
+	var didItWorkValue
 	var windowOptions = ["--Choose A Opertaing System--" ,"Windows 7", "Windows Vista" , "Windows XP"];
 	var fileSystem = ["--Choose type of OS--" ,"32 Bit", "64 Bit"];
 	getWindows();
-	gettype()	
+	gettype();	
 
 
 	//Set Link & Submit Click Events
