@@ -1,0 +1,73 @@
+body{
+	width: 60em;
+	margin: 0 auto;
+	background-image: linear-gradient(to bottom right, #191919 0%, #0A65EF 100%);
+	background-image: -webkit-linear-gradient(top left, #191919 0%, #0A65EF 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #191919), color-stop(1, #0A65EF));
+	background-image: -o-linear-gradient(top left, #191919 0%, #0A65EF 100%);
+	background-image: -moz-linear-gradient(top left, #191919 0%, #0A65EF 100%);
+	background-image: -ms-linear-gradient(top left, #191919 0%, #0A65EF 100%);
+	background-repeat:repeat;
+	height: 88em;
+}
+
+
+
+#container{
+	padding: opx opx opx opx;
+	margin: 10px 0px 12px 0px;
+	border: 1px solid #CCC;
+}
+
+
+#top-container{
+	text-align: center;
+	background-color:blue;
+	color:white;
+}
+
+#legendCenter{
+	text-align: center;
+	font-size: 30px;
+	text-decoration: underline;
+
+
+
+}
+
+#mid-container{
+	background-color:black;
+	color:white;
+}
+
+.checkbox li{
+	display: inline;
+	padding:0px 10px 0px 0px;
+
+}
+
+
+#footer{
+	text-align: center;
+	background-color:blue;
+	color:white;
+
+
+}
+
+#footer ul li { 
+        text-align: center;
+	display: inline;
+	padding:0px 10px 0px 0px;
+	
+}
+
+#footer a{
+	color:white;
+	font-size: 20px;
+	text-decoration: none;
+	
+}
+
+
+
